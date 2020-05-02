@@ -1,5 +1,5 @@
 {
-  "name": "juzi-qa",
+  "name": "simple-qnamaker",
   "version": "1.0.0",
   "description": "make it simple to call qnamaker",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/juzibot/juzi-qa.git"
+    "url": "git+https://github.com/juzibot/simple-qnamaker.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/juzibot/juzi-qa/issues"
+    "url": "https://github.com/juzibot/simple-qnamaker/issues"
   },
-  "homepage": "https://github.com/juzibot/juzi-qa#readme",
+  "homepage": "https://github.com/juzibot/simple-qnamaker#readme",
   "dependencies": {
     "botbuilder-ai": "^4.8.0"
   }
