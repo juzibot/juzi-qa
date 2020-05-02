@@ -4,7 +4,7 @@ import {
   QnAMakerResult,
 } from 'botbuilder-ai'
 
-export async function simpleQnAMaker (option: QnAMakerEndpoint) {
+export function simpleQnAMaker (option: QnAMakerEndpoint) {
 
   const qnaMaker = new QnAMaker({
     endpointKey     : option.endpointKey,
