@@ -1,6 +1,6 @@
 # simple-qnamaker
 
-![QnAMaker](docs/images/logo.png)
+![QnAMaker](docs/images/logo.jpeg)
 
 Make it simple to call QnAMaker
 
