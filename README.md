@@ -1,5 +1,7 @@
 # simple-qnamaker
 
+![QnAMaker](docs/images/logo.png)
+
 Make it simple to call QnAMaker
 
 [QnAMaker](https://www.qnamaker.ai/) is a cloud service powered by Microsoft.
