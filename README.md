@@ -1,6 +1,8 @@
 # simple-qnamaker
 
-Make it simple to call qnamaker
+Make it simple to call QnAMaker
+
+[QnAMaker](https://www.qnamaker.ai/) is a cloud service powered by Microsoft. It can build, train and publish a sophisticated bot using FAQ pages, support websites, product manuals, SharePoint documents or editorial content through an easy-to-use UI or via REST APIs.
 
 ## Install
 
