@@ -28,4 +28,8 @@ export async function simpleQnAMaker (option: QnAMakerEndpoint) {
   }
 }
 
-export default { simpleQnAMaker }
+export default simpleQnAMaker
+export {
+  QnAMakerEndpoint,
+  QnAMakerResult,
+}
