@@ -1,6 +1,6 @@
 {
   "name": "simple-qnamaker",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "make it simple to call qnamaker",
   "main": "dist/src/index.js",
   "typings": "dist/src/index.d.ts",
