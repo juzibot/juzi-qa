@@ -1,23 +1,53 @@
 {
   "name": "simple-qnamaker",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "make it simple to call qnamaker",
-  "main": "index.js",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "shx rm -fr dist/*",
+    "dist": "npm run clean && tsc",
+    "pack": "npm pack",
+    "lint": "npm run lint:es && npm run lint:ts && npm run lint:md",
+    "lint:md": "markdownlint README.md",
+    "lint:ts": "tsc --noEmit",
+    "lint:es": "eslint --ignore-pattern tests/fixtures/ '{bin,examples,scripts,src,tests}/**/*.ts'",
+    "example": "ts-node examples/ding-dong-bot.ts",
+    "start": "npm run example",
+    "test": "npm run lint && npm run test:unit",
+    "test:pack": "bash -x scripts/npm-pack-testing.sh",
+    "test:unit": "blue-tape -r ts-node/register \"src/**/*.spec.ts\" \"src/*.spec.ts\" \"tests/*.spec.ts\" \"tests/**/*.spec.ts\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/juzibot/simple-qnamaker.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Jiarui LI (李佳芮) <ruiruibupt@gmail.com>",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/juzibot/simple-qnamaker/issues"
   },
   "homepage": "https://github.com/juzibot/simple-qnamaker#readme",
   "dependencies": {
     "botbuilder-ai": "^4.8.0"
+  },
+  "devDependencies": {
+    "@chatie/eslint-config": "^0.8.1",
+    "@chatie/git-scripts": "^0.6.1",
+    "@chatie/semver": "^0.4.7",
+    "@chatie/tsconfig": "^0.10.1",
+    "node-jq": "^1.11.0",
+    "pkg-jq": "^0.2.4",
+    "shx": "^0.3.2",
+    "tstest": "^0.4.10"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "npx git-scripts-pre-push"
+    }
+  },
+  "publishConfig": {
+    "tag": "next"
   }
 }

@@ -7,9 +7,9 @@ import {
 export async function simpleQnAMaker (option: QnAMakerEndpoint) {
 
   const qnaMaker = new QnAMaker({
-    knowledgeBaseId: option.knowledgeBaseId,
-    endpointKey: option.endpointKey,
-    host: option.host,
+    endpointKey     : option.endpointKey,
+    host            : option.host,
+    knowledgeBaseId : option.knowledgeBaseId,
   })
 
   return async (text: string): Promise<QnAMakerResult[]> => {

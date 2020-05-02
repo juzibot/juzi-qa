@@ -33,7 +33,8 @@ Type of the answer:
  */
 export interface QnAMakerResult {
     /**
-     * The list of questions indexed in the QnA Service for the given answer. (If any)
+     * The list of questions indexed in the QnA Service
+     *  for the given answer. (If any)
      */
     questions?: string[];
 
@@ -58,7 +59,8 @@ export interface QnAMakerResult {
     source?: string;
 
     /**
-     * The index of the answer in the knowledge base. V3 uses 'qnaId', V4 uses 'id'. (If any)
+     * The index of the answer in the knowledge base.
+     *  V3 uses 'qnaId', V4 uses 'id'. (If any)
      */
     id?: number;
 
